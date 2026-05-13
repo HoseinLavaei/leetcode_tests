@@ -18,13 +18,9 @@ class Solution:
             if current_l1 is not None or current_l2 is not None:
                 val1 = 0
                 val2 = 0
-                if current_l1 is None:
-                    val1 = 0
-                else:
+                if current_l1 is not None:
                     val1 = current_l1.val
-                if current_l2 is None:
-                    val2 = 0
-                else:
+                if current_l2 is not None:
                     val2 = current_l2.val
                 sum = val1 + val2
                 if sum + carry >= 10:
