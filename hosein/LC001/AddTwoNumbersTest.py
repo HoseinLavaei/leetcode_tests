@@ -9,7 +9,6 @@ def test_add_two_numbers():
     while True:
         if not l3 and not expected:
             break
-        if l3.val != expected.val:
-            raise Exception
+        assert l3.val == expected.val
         l3 = l3.next
         expected = expected.next
