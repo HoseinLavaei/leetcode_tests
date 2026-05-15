@@ -52,7 +52,7 @@ class SudokuViewer:
                 square.append(self.get(row,col))
         return square
     def validate_line(self, line_type:LineType, index:int) -> bool:
-        line = None
+        line = []
         match line_type:
             case LineType.row:
                 line = self.get_row(index)
