@@ -1,25 +1,37 @@
-from amir.LC001 import test_linkedlist_sum as a_lc001
-from hosein.LC001 import test_add_two_numbers as h_lc001
-from hosein.LC002 import test_lswrc as h_lc002
-from hosein.LC003 import test_valid_sudoku as h_lc003
-from hosein.LC004 import test_median_of_two_sorted_arrays as h_lc004
-from hosein.LC005 import test_zigzag_conversion as h_lc005
-from hosein.LC006 import test_reverse_integer as h_lc006
+import importlib
+import pkgutil
+import os
+
+def run_all_tests():
+    user_packages = ['hosein', 'amir']
+    
+    for user_name in user_packages:
+        try:
+            user_package = importlib.import_module(user_name)
+        except ImportError:
+            print(f"Could not import package: {user_name}")
+            continue
+
+        print(f"Running tests for {user_name}...")
+
+        submodules = sorted(pkgutil.iter_modules(user_package.__path__), key=lambda x: x.name)
+        
+        for loader, module_name, is_pkg in submodules:
+            if is_pkg and module_name.startswith("LC"):
+                full_module_name = f"{user_name}.{module_name}"
+                try:
+                    module = importlib.import_module(full_module_name)
+                    for attr_name in sorted(dir(module)):
+                        if attr_name.startswith("test_"):
+                            test_func = getattr(module, attr_name)
+                            if callable(test_func):
+                                print(f"  Calling {full_module_name}.{attr_name}()")
+                                test_func()
+                except Exception as e:
+                    print(f"  Error importing/running {full_module_name}: {e}")
 
 def main():
-    hosein_tests()
-    amir_tests()
-
-def hosein_tests():
-    h_lc001()
-    h_lc002()
-    h_lc003()
-    h_lc004()
-    h_lc005()
-    h_lc006()
-
-def amir_tests():
-    a_lc001()
+    run_all_tests()
 
 if __name__ == "__main__":
     main()
