@@ -4,6 +4,7 @@ from hosein.LC002 import test_lswrc as h_lc002
 from hosein.LC003 import test_valid_sudoku as h_lc003
 from hosein.LC004 import test_median_of_two_sorted_arrays as h_lc004
 from hosein.LC005 import test_zigzag_conversion as h_lc005
+from hosein.LC006 import test_reverse_integer as h_lc006
 
 def main():
     hosein_tests()
@@ -15,6 +16,7 @@ def hosein_tests():
     h_lc003()
     h_lc004()
     h_lc005()
+    h_lc006()
 
 def amir_tests():
     a_lc001()
