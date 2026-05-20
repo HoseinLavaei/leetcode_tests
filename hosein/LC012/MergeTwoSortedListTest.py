@@ -1,5 +1,6 @@
-from .MergeTwoSortedList import Solution
 from .MergeTwoSortedList import ListNode
+from .MergeTwoSortedList import Solution
+
 
 def to_list(node):
     result = []
