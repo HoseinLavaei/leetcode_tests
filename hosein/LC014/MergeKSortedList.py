@@ -1,20 +1,19 @@
 from typing import Optional
+from typing import List
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
 
 class Solution:
-    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-        current_list1 = list1
-        current_list2 = list2
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         numbers = []
-        while current_list1:
-            numbers.append(current_list1.val)
-            current_list1 = current_list1.next
-        while current_list2:
-            numbers.append(current_list2.val)
-            current_list2 = current_list2.next
+        for l in lists:
+            current_list = l
+            while current_list:
+                numbers.append(current_list.val)
+                current_list = current_list.next
         numbers = sorted(numbers)
         if not numbers:
             return None
