@@ -1,6 +1,5 @@
 import importlib
 import pkgutil
-import os
 
 def run_all_tests():
     user_packages = ['hosein', 'amir']
@@ -17,18 +16,20 @@ def run_all_tests():
         submodules = sorted(pkgutil.iter_modules(user_package.__path__), key=lambda x: x.name)
         
         for loader, module_name, is_pkg in submodules:
-            if is_pkg and module_name.startswith("LC"):
-                full_module_name = f"{user_name}.{module_name}"
-                try:
-                    module = importlib.import_module(full_module_name)
-                    for attr_name in sorted(dir(module)):
-                        if attr_name.startswith("test_"):
-                            test_func = getattr(module, attr_name)
-                            if callable(test_func):
-                                print(f"  Calling {full_module_name}.{attr_name}()")
-                                test_func()
-                except Exception as e:
-                    print(f"  Error importing/running {full_module_name}: {e}")
+            if not(is_pkg and module_name.startswith("LC")):
+                continue
+            full_module_name = f"{user_name}.{module_name}"
+            try:
+                module = importlib.import_module(full_module_name)
+                for attr_name in sorted(dir(module)):
+                    if attr_name.startswith("test_"):
+                        test_func = getattr(module, attr_name)
+                        if callable(test_func):
+                            print(f"  Calling {full_module_name}.{attr_name}()")
+                            test_func()
+            except Exception as e:
+                print(f"  Error importing/running {full_module_name}: {e}")
+
 
 def main():
     run_all_tests()

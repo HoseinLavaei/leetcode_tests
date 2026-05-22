@@ -67,10 +67,10 @@ class SudokuViewer:
                 unknown_counter += 1
             else:
                 flags[int(line[i]) - 1] = True
-        false_counter = 0
-        for i in range(9):
-            if not flags[i]:
-                false_counter += 1
+        false_counter = len(flags) - sum(flags)
+        # for i in range(9):
+        #     if not flags[i]:
+        #         false_counter += 1
         if unknown_counter == false_counter:
             return True
         return all(flags)
