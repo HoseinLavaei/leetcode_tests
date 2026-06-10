@@ -1,5 +1,5 @@
-from .DistinctSubsequences import Solution
-from .DistinctSubsequencesTest import test_distinct_subsequences
+from .distinct_subsequences import Solution
+from .test_distinct_subsequences import test_distinct_subsequences
 
 __all__ = [
     "Solution",

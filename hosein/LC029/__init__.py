@@ -1,5 +1,5 @@
-from .JumpGameII import Solution
-from .JumpGameIITest import test_jump_game_ii
+from .jump_game_ii import Solution
+from .test_jump_game_ii import test_jump_game_ii
 
 __all__ = [
     "Solution",

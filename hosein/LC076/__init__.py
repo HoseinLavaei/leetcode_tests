@@ -1,5 +1,5 @@
-from .DungeonGame import Solution
-from .DungeonGameTest import test_dungeon_game
+from .dungeon_game import Solution
+from .test_dungeon_game import test_dungeon_game
 
 __all__ = [
     "Solution",

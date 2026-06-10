@@ -1,5 +1,5 @@
-from .PalindromePartitioning2 import Solution
-from .PalindromePartitioning2Test import test_palindrome_partitioning_2
+from .palindrome_partitioning2 import Solution
+from .test_palindrome_partitioning2 import test_palindrome_partitioning_2
 
 __all__ = [
     "Solution",

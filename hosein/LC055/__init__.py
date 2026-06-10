@@ -1,5 +1,5 @@
-from .MinimumWindowSubstring import Solution
-from .MinimumWindowSubstringTest import test_minimum_window_substring
+from .minimum_window_substring import Solution
+from .test_minimum_window_substring import test_minimum_window_substring
 
 __all__ = [
     "Solution",

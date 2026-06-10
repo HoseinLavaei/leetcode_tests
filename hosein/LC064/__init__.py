@@ -1,5 +1,5 @@
-from .PartitionList import Solution
-from .PartitionListTest import test_partition_list
+from .partition_list import Solution
+from .test_partition_list import test_partition_list
 
 __all__ = [
     "Solution",

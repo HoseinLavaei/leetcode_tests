@@ -1,5 +1,5 @@
-from .MedianOfTwoSortedArrays import Solution
-from .MedianOfTwoSortedArraysTest import test_median_of_two_sorted_arrays
+from .median_of_two_sorted_arrays import Solution
+from .test_median_of_two_sorted_arrays import test_median_of_two_sorted_arrays
 
 __all__ = [
     "Solution",

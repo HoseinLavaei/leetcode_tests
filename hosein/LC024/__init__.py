@@ -1,5 +1,5 @@
-from .CombinationSum2 import Solution
-from .CombinationSum2Test import test_combination_sum_2
+from .combination_sum2 import Solution
+from .test_combination_sum2 import test_combination_sum_2
 
 __all__ = [
     "Solution",

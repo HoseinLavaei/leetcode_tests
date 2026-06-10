@@ -1,5 +1,5 @@
-from .WildcardMatching import Solution
-from .WildcardMatchingTest import test_wildcard_matching
+from .wildcard_matching import Solution
+from .test_wildcard_matching import test_wildcard_matching
 
 __all__ = [
     "Solution",

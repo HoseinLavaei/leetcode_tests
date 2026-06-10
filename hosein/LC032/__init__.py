@@ -1,5 +1,5 @@
-from .RotateImage import Solution
-from .RotateImageTest import test_rotate_image
+from .rotate_image import Solution
+from .test_rotate_image import test_rotate_image
 
 __all__ = [
     "Solution",

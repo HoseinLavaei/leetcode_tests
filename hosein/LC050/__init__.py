@@ -1,5 +1,5 @@
-from .SimplifyPath import Solution
-from .SimplifyPathTest import test_simplify_path
+from .simplify_path import Solution
+from .test_simplify_path import test_simplify_path
 
 __all__ = [
     "Solution",

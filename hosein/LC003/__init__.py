@@ -1,5 +1,5 @@
-from .ValidSudoku import Solution
-from .ValidSudokuTest import test_valid_sudoku
+from .valid_sudoku import Solution
+from .test_valid_sudoku import test_valid_sudoku
 
 __all__ = [
     "Solution",

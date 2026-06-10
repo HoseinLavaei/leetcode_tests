@@ -1,5 +1,5 @@
-from .RotateList import Solution
-from .RotateListTest import test_rotate_list
+from .rotate_list import Solution
+from .test_rotate_list import test_rotate_list
 
 __all__ = [
     "Solution",

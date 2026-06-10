@@ -1,5 +1,5 @@
-from .ScrambleString import Solution
-from .ScrambleStringTest import test_scramble_string
+from .scramble_string import Solution
+from .test_scramble_string import test_scramble_string
 
 __all__ = [
     "Solution",

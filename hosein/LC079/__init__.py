@@ -1,5 +1,5 @@
-from .ShortestPalindrome import Solution
-from .ShortestPalindromeTest import test_shortest_palindrome
+from .shortest_palindrome import Solution
+from .test_shortest_palindrome import test_shortest_palindrome
 
 __all__ = [
     "Solution",

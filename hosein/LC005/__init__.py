@@ -1,5 +1,5 @@
-from .ZigzagConversion import Solution
-from .ZigzagConversionTest import test_zigzag_conversion
+from .zigzag_conversion import Solution
+from .test_zigzag_conversion import test_zigzag_conversion
 
 __all__ = [
     "Solution",

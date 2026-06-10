@@ -1,5 +1,5 @@
-from .ContainsDuplicate3 import Solution
-from .ContainsDuplicate3Test import test_contains_duplicates
+from .contains_duplicate3 import Solution
+from .test_contains_duplicate3 import test_contains_duplicates
 
 __all__ = [
     "Solution",

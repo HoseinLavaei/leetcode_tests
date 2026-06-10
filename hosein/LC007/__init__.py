@@ -1,5 +1,5 @@
-from .ContainerWithMostWater import Solution
-from .ContainerWithMostWaterTest import test_container_with_most_water
+from .container_with_most_water import Solution
+from .test_container_with_most_water import test_container_with_most_water
 
 __all__ = [
     "Solution",

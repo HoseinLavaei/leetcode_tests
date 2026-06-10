@@ -1,5 +1,5 @@
-from .Combinations import Solution
-from .CombinationsTest import test_combinations
+from .combinations import Solution
+from .test_combinations import test_combinations
 
 __all__ = [
     "Solution",

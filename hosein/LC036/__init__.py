@@ -1,5 +1,5 @@
-from .NQueens2 import Solution
-from .NQueens2Test import test_n_queens_2
+from .n_queens2 import Solution
+from .test_n_queens2 import test_n_queens_2
 
 __all__ = [
     "Solution",

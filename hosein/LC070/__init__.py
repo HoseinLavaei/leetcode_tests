@@ -1,5 +1,5 @@
-from .WordLadder import Solution
-from .WordLadderTest import test_word_ladder
+from .word_ladder import Solution
+from .test_word_ladder import test_word_ladder
 
 __all__ = [
     "Solution",

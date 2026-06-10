@@ -1,5 +1,5 @@
-from .AddTwoNumbers import ListNode, Solution
-from .AddTwoNumbersTest import test_add_two_numbers
+from .add_two_numbers import ListNode, Solution
+from .test_add_two_numbers import test_add_two_numbers
 
 __all__ = [
     "ListNode",

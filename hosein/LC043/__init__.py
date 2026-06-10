@@ -1,5 +1,5 @@
-from .PermutationSequence import Solution
-from .PermutationSequenceTest import test_permutation_sequence
+from .permutation_sequence import Solution
+from .test_permutation_sequence import test_permutation_sequence
 
 __all__ = [
     "Solution",

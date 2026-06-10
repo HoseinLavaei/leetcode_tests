@@ -1,5 +1,5 @@
-from .MaximumSubarray import Solution
-from .MaximumSubarrayTest import test_maximum_subarray
+from .maximum_subarray import Solution
+from .test_maximum_subarray import test_maximum_subarray
 
 __all__ = [
     "Solution",

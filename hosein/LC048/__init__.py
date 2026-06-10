@@ -1,5 +1,5 @@
-from .ValidNumber import Solution
-from .ValidNumberTest import test_valid_number
+from .valid_number import Solution
+from .test_valid_number import test_valid_number
 
 __all__ = [
     "Solution",

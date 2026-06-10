@@ -1,7 +1,5 @@
-from .RussianDollEnvelopes import Solution
-from .RussianDollEnvelopesTest import test_russian_doll_envelopes
+from .test_combine_two_tables import test_combine_two_tables
 
 __all__ = [
-    "Solution",
-    "test_russian_doll_envelopes",
+    "test_combine_two_tables",
 ]

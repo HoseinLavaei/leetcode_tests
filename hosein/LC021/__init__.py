@@ -1,5 +1,5 @@
-from .SudokuSolver import Solution
-from .SudokuSolverTest import test_sudoku_solver
+from .sudoku_solver import Solution
+from .test_sudoku_solver import test_sudoku_solver
 
 __all__ = [
     "Solution",

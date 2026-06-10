@@ -1,5 +1,5 @@
-from .MinimumPathSum import Solution
-from .MinimumPathSumTest import test_minimum_path_sum
+from .minimum_path_sum import Solution
+from .test_minimum_path_sum import test_minimum_path_sum
 
 __all__ = [
     "Solution",

@@ -1,5 +1,5 @@
-from .BasicCalculator import Solution
-from .BasicCalculatorTest import test_basic_calculator
+from .basic_calculator import Solution
+from .test_basic_calculator import test_basic_calculator
 
 __all__ = [
     "Solution",

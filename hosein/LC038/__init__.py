@@ -1,5 +1,5 @@
-from .SpiralMatrix import Solution
-from .SpiralMatrixTest import test_spiral_matrix
+from .spiral_matrix import Solution
+from .test_spiral_matrix import test_spiral_matrix
 
 __all__ = [
     "Solution",

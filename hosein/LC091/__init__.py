@@ -1,5 +1,5 @@
-from .BurstBalloons import Solution
-from .BurstBalloonsTest import test_burst_balloons
+from .burst_balloons import Solution
+from .test_burst_balloons import test_burst_balloons
 
 __all__ = [
     "Solution",

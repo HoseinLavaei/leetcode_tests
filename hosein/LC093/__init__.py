@@ -1,5 +1,5 @@
-from .CreateMaximumNumber import Solution
-from .CreateMaximumNumberTest import test_create_maximum_number
+from .create_maximum_number import Solution
+from .test_create_maximum_number import test_create_maximum_number
 
 __all__ = [
     "Solution",

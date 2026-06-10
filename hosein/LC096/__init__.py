@@ -1,5 +1,5 @@
-from .PatchingArray import Solution
-from .PatchingArrayTest import test_patching_array
+from .patching_array import Solution
+from .test_patching_array import test_patching_array
 
 __all__ = [
     "Solution",

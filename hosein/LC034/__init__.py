@@ -1,5 +1,5 @@
-from .Pow import Solution
-from .PowTest import test_pow
+from .pow import Solution
+from .test_pow import test_pow
 
 __all__ = [
     "Solution",

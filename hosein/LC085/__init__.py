@@ -1,5 +1,5 @@
-from .SlidingWindowMaximum import Solution
-from .SlidingWindowMaximumTest import test_sliding_window_maximum
+from .sliding_window_maximum import Solution
+from .test_sliding_window_maximum import test_sliding_window_maximum
 
 __all__ = [
     "Solution",

@@ -1,5 +1,5 @@
-from .GenerateParentheses import Solution
-from .GenerateParenthesesTest import test_generate_parentheses
+from .generate_parentheses import Solution
+from .test_generate_parentheses import test_generate_parentheses
 
 __all__ = [
     "Solution",

@@ -1,5 +1,5 @@
-from .RemoveDuplicatesFromSortedList2 import Solution
-from .RemoveDuplicatesFromSortedList2Test import test_remove_duplicates_from_sorted_List_2
+from .remove_duplicates_from_sorted_list2 import Solution
+from .test_remove_duplicates_from_sorted_list2 import test_remove_duplicates_from_sorted_List_2
 
 __all__ = [
     "Solution",

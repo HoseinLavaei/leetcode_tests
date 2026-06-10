@@ -1,5 +1,5 @@
-from .WordSearch import Solution
-from .WordSearchTest import test_word_search
+from .word_search import Solution
+from .test_word_search import test_word_search
 
 __all__ = [
     "Solution",
