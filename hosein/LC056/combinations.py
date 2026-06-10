@@ -1,0 +1,20 @@
+from typing import List
+
+
+class Solution:
+    def combine(self, n: int, k: int) -> List[List[int]]:
+        result: List[List[int]] = []
+        current: List[int] = []
+
+        def backtrack(start: int) -> None:
+            if len(current) == k:
+                result.append(current.copy())
+                return
+
+            for num in range(start, n + 1):
+                current.append(num)
+                backtrack(num + 1)
+                current.pop()
+
+        backtrack(1)
+        return result

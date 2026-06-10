@@ -1,0 +1,17 @@
+from typing import List
+
+
+class Solution:
+    def jump(self, nums: List[int]) -> int:
+        jumps = 0
+        current_jump_end = 0
+        farthest_reachable = 0
+
+        for index in range(len(nums) - 1):
+            farthest_reachable = max(farthest_reachable, index + nums[index])
+
+            if index == current_jump_end:
+                jumps += 1
+                current_jump_end = farthest_reachable
+
+        return jumps
