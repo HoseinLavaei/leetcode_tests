@@ -10,9 +10,7 @@ def run_test(r):
 
     for i in range(total_requests):
         now = start_time + i * step
-        # Remove old entries
         r.zremrangebyscore(key, 0, now - window)
-        # Count current
         count = r.zcard(key)
         if count < limit:
             r.zadd(key, {now: now})

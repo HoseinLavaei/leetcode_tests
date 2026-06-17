@@ -1,2 +1,2 @@
 def run_setup(r):
-    r.flushdb()  # clean start
+    r.flushdb()
